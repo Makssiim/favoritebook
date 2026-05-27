@@ -459,25 +459,80 @@ tr:last-child td {
 }
 
 @media (max-width: 640px) {
-    .two-column {
-        grid-template-columns: 1fr;
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
     }
 
-    .content-card {
-        padding: 18px;
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .table-wrap {
-        overflow-x: visible;
-        border: none;
+    header {
+        width: 100%;
+        padding: 16px 0 28px;
     }
 
-    table {
-        min-width: 0;
+    .header-content {
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    .theme-box {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 18px;
+    }
+
+    #themeBtn {
         width: 100%;
     }
 
+    .two-column,
+    .hero,
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card,
+    .image-card,
+    .quote-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 0;
+    }
+
     table,
+    tbody,
     tr,
     th,
     td {
@@ -485,33 +540,21 @@ tr:last-child td {
     }
 
     tr {
-        margin-bottom: 14px;
-        border: 1px solid var(--border);
-        border-radius: 14px;
+        margin-bottom: 12px;
+        border: 1px solid #b9d8d4;
+        border-radius: 12px;
         overflow: hidden;
-        background: var(--card-bg);
     }
 
-    th {
-        width: 100%;
-        padding: 10px 12px;
-        background: rgba(47, 143, 131, 0.12);
-    }
-
+    th,
     td {
-        padding: 10px 12px;
-        border-bottom: none;
-    }
-
-    .image-card {
-        min-height: auto;
-        padding: 14px;
-    }
-
-    .image-card img {
         width: 100%;
-        max-width: 320px;
+        padding: 10px;
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
         height: auto;
-        margin: 0 auto;
     }
 }
