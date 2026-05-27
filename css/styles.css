@@ -457,3 +457,61 @@ tr:last-child td {
         flex-direction: column;
     }
 }
+
+@media (max-width: 640px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+
+    .table-wrap {
+        overflow-x: visible;
+        border: none;
+    }
+
+    table {
+        min-width: 0;
+        width: 100%;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 14px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--card-bg);
+    }
+
+    th {
+        width: 100%;
+        padding: 10px 12px;
+        background: rgba(47, 143, 131, 0.12);
+    }
+
+    td {
+        padding: 10px 12px;
+        border-bottom: none;
+    }
+
+    .image-card {
+        min-height: auto;
+        padding: 14px;
+    }
+
+    .image-card img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
