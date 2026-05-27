@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє враження</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container top-nav" aria-label="Головне меню">
+        <a class="logo" href="index.html">Favorite Book</a>
+        <ul class="nav-menu">
+                <li><a href="index.html" class="">Головна</a></li>
+                <li><a href="book.html" class="">Про книгу</a></li>
+                <li><a href="author.html" class="">Автор</a></li>
+                <li><a href="characters.html" class="">Сюжет і персонажі</a></li>
+                <li><a href="impression.html" class="active">Моє враження</a></li>
+        </ul>
+        <button id="themeBtn" class="theme-button" type="button">Темна тема</button>
+    </nav>
+
+    <section class="container header-content">
+        <span class="decor-dot"></span>
+        <h1>Моє враження</h1>
+        <p>Чому мені подобається ця книга</p>
+    </section>
+</header>
+
+<main class="container page-content">
+
+    <section class="two-column">
+        <article class="content-card reveal">
+            <span class="eyebrow">Особиста думка</span>
+            <h2>Чому я обрав цю книгу</h2>
+            <p>
+                Я обрав книгу «Гаррі Поттер і філософський камінь», тому що вона має
+                цікавий сюжет і легко читається. У ній поєднуються пригоди, магія,
+                дружба та боротьба зі злом.
+            </p>
+            <p>
+                Найбільше мені запам’яталася атмосфера Гоґвортсу. У книзі добре
+                показано, як Гаррі знаходить нових друзів і поступово стає сміливішим.
+            </p>
+        </article>
+
+        <article class="content-card reveal">
+            <span class="eyebrow">Ідеї</span>
+            <h2>Головні ідеї</h2>
+            <ol class="styled-list numbered">
+                <li>Справжня дружба допомагає долати труднощі.</li>
+                <li>Сміливість важлива навіть тоді, коли страшно.</li>
+                <li>Людина сама робить вибір між добром і злом.</li>
+                <li>Минуле може впливати на життя, але не визначає його повністю.</li>
+            </ol>
+        </article>
+    </section>
+
+    <section class="content-card recommendation-card reveal">
+        <span class="eyebrow">Рекомендація</span>
+        <h2>Кому варто прочитати</h2>
+        <p class="muted">Натисніть кнопку, щоб відкрити мою рекомендацію.</p>
+        <button id="recommendBtn" class="main-button">Показати рекомендацію</button>
+
+        <div id="recommendBlock" class="recommendation hidden">
+            <p>
+                Я рекомендую цю книгу підліткам і дорослим, які люблять пригоди,
+                фантастику та історії про дружбу. Вона підходить для тих, хто хоче
+                прочитати цікаву, емоційну і не дуже складну книгу.
+            </p>
+        </div>
+    </section>
+    
+</main>
+
+<footer class="site-footer">
+    <p>Сайт про улюблену книгу © 2026</p>
+</footer>
+
+</body>
+</html>
